@@ -1,5 +1,8 @@
 <?php
 include "../layout/header.php";
+if (isset($_SESSION["role"])) {
+    header("Location:index.php");
+}
 ?>
 <div class="position-fixed top-50 start-50 translate-middle">
     <div class="card col-lg-12 mx-auto">

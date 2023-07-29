@@ -1,5 +1,8 @@
 <?php
 include "../layout/header.php";
+if (isset($_SESSION["role"])) {
+    header("Location:index.php");
+}
 ?>
 <div class="container">
     <div class="pt-5 mt-5">
